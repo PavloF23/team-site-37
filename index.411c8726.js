@@ -1,0 +1,2 @@
+function myClick(){document.querySelector(".form");var e=document.querySelectorAll(".form__input"),r=Array.from(e).filter((function(e){return""===e.value})),l=document.getElementById("span");if(e.forEach((function(e){""===e.value?(e.classList.add("error"),l.style.display="block",document.querySelector(".span").innerHTML="All fields are required"):(e.classList.remove("error"),l.style.display="none")})),0!==r.length)return console.log("fin filled"),!1}document.querySelector(".vali").onclick=myClick;
+//# sourceMappingURL=index.411c8726.js.map
