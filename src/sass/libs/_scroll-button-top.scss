@@ -1,0 +1,39 @@
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: $accent-btn-cl;
+  color: $primary-bg-color;
+  animation: scroll-top 1000ms linear infinite alternate;
+  transition-property: color, background-color, border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(min-width:768px) {
+    height: 40px;
+    width: 40px;
+  }
+
+  &:hover,
+  :focus {
+    background-color: $primary-bg-color;
+    color: $accent-btn-cl;
+    border: 1px solid $accent-btn-cl;
+  }
+}
+@keyframes scroll-top {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+.scroll-top__icon {
+  fill: currentColor;
+}

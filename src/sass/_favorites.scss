@@ -1,0 +1,135 @@
+// favorites
+.favorites__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorites__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.16;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+  }
+}
+
+.favorites__text {
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  //   @media screen and (min-width: 1280px) {
+
+  //   }
+}
+
+.favorites__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+}
+.favorites__item {
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+
+  //   width: 250px;
+  //   height: 250px;
+  @media screen and (min-width: 480px) {
+    // width: 280px;
+    // height: 282px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    width: 336px;
+    height: 338px;
+    flex-basis: calc((100% - (2 - 1) * 32px) / 2);
+  }
+  @media screen and (min-width: 1280px) {
+    width: 394px;
+    height: 396px;
+    flex-basis: calc((100% - (3 - 1) * 32px) / 3);
+  }
+}
+.favorites__item--mobile {
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+}
+.favorites__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   border: 11px solid #ffe550;
+  border: 11px;
+  border-style: solid;
+  border-color: #ffe550;
+  border-radius: 50%;
+
+  width: 280px;
+  height: 282px;
+
+  transition: border-color $timing-function, transform $timing-function;
+  &:hover,
+  &:focus {
+    border-color: #bbf330;
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 767px) {
+    // width: 280px;
+
+    // height: 282px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 338px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 394px;
+    height: 396px;
+  }
+}
+.favorites__link:hover,
+.favorites__link:focus,
+.favorites__link:active {
+  border-color: #bbf330;
+}
+.favorites__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  transition: transform $timing-function;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+  @media screen and (max-width: 767px) {
+    width: 223px;
+    // height: 223px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    width: 268px;
+    // height: 270px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 315px;
+    // height: 315px;
+  }
+}

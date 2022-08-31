@@ -1,0 +1,69 @@
+<!-- Subscribe section -->
+<section class="subscribe container" id="contact">
+  <div class="subscribe__section">
+    <div class="subscribe__picture">
+      <picture>
+        <!-- desktop -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/subscribe/banan_lg@1x.png 1x,
+            ./images/subscribe/banan_lg@2x.png 2x
+          "
+        />
+        <!-- tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/subscribe/banan_md@1x.png 1x,
+            ./images/subscribe/banan_md@2x.png 2x
+          "
+        />
+        <!-- mobile -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/subscribe/banan_sm@1x.png 1x,
+            ./images/subscribe/banan_sm@2x.png 2x
+          "
+        />
+
+        <img
+          src="./images/subscribe/banan_lg@1x.png"
+          alt="Banan"
+          class="subscribe-section__img"
+        />
+      </picture>
+    </div>
+
+    <div class="subscribe__content">
+      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="subscribe__form">
+        <label class="subscribe__mail">
+          <input
+            type="email"
+            name="address"
+            class="subscribe__input"
+            placeholder="Enter your email"
+            required
+          />
+          <svg class="subscribe__icon" width="12" height="12">
+            <use
+              class="subscribe__warning"
+              href="./images/sprite.svg#icon-alert-subscribe"
+            ></use>
+          </svg>
+          <span class="subscribe__notfication"
+            >Not a valid email address (example@email.com)</span
+          >
+        </label>
+
+        <button class="subscribe__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>

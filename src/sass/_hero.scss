@@ -1,0 +1,98 @@
+// Hero
+.hero {
+  position: relative;
+  padding-top: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: -40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    padding-top: 14px;
+  }
+}
+
+// .hero__box {
+//     @media screen and (min-width: 1280px) {
+
+//     }
+// }
+
+.hero__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 120%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 156px;
+    font-size: 48px;
+    width: 502px;
+  }
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  margin-top: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+
+    padding-top: 44px;
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 28px;
+    width: 502px;
+  }
+}
+
+.hero__btn {
+  margin-top: 28px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+.galery {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  @media screen and (min-width: 1280px) {
+    top: 14px;
+    right: 80px;
+  }
+}
+
+.swiper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: block;
+    width: 420px;
+    height: 320px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    display: block;
+    width: 650px;
+    height: 580px;
+  }
+}
